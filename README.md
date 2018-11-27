@@ -1,4 +1,5 @@
-## Machine Learning
+Machine Learning
+=
 
 1. Introduction à python
 2. Descente de gradient et perceptron
