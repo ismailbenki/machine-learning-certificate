@@ -3,10 +3,10 @@ Machine Learning
 
 1. Introduction à python
 2. Descente de gradient et perceptron
-3. k-plus proches voisins
-4. Support Vector Machine
+3. k-plus proches voisins (k-NN)
+4. Support Vector Machine (SVM)
 5. Neural Network
-6. Convolutional Networking
+6. Convolutional Neurol Network (CNN)
 
 ## Références
 
