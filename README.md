@@ -6,6 +6,7 @@ Machine Learning
 3. k-plus proches voisins
 4. Support Vector Machine
 5. Neural Network
+6. Convolutional Networking
 
 ## Références
 
