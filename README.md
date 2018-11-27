@@ -1,8 +1,6 @@
 Machine Learning
 ================
 
-## Sorbonne Université
-
 1. Introduction à python
 2. Descente de gradient et perceptron
 3. k-plus proches voisins
