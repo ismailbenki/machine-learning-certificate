@@ -7,6 +7,7 @@ Machine Learning
 4. Support Vector Machine (SVM)
 5. Neural Network
 6. Convolutional Neural Network (CNN)
+7. Projet
 
 ## Références
 
