@@ -1,0 +1,90 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper]{geometry}
+\geometry{hscale=0.85,vscale=0.85,centering}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{framed}
+\usepackage[framed]{ntheorem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{young}
+\usepackage[document]{ragged2e}
+\usepackage[vcentermath]{youngtab}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{					% setup the hyperref-package options
+	breaklinks=true,			% 	- allow line break inside links		%
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\usepackage{tikz}
+\usepackage{subfigure}
+\usepackage[francais]{babel}
+
+\titleformat{\section}
+{\centering \Large \normalfont \scshape}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\centering \large \scshape}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{ \normalsize \scshape}{\thesubsubsection}{1em}{}
+\numberwithin{equation}{section}
+\DeclareUnicodeCharacter{00A0}{~}
+
+\setcounter{tocdepth}{2}
+
+\newtheorem{theorem}{Théorème}[section]
+\newtheorem{coro}{Corollaire}[section]
+\newtheorem{lem}{Lemme}[section]
+
+\newcommand{\T}{\mathfrak{T}}
+\renewcommand{\Pr}{\mathbb{P}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\gSym}{\mathfrak{S}_N}
+\newcommand{\lN}{\ell_N}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\cqfd}{\begin{flushright} $\Box$ \end{flushright}}
+\newcommand{\preuve}{$Preuve.$ }
+
+
+\title{\scshape \huge Forest Cover Type Prediction}
+\author{\textbf{Kevin Zagalo} \\  \url{kevin.zagalo@etu.upmc.fr}  \and \textbf{Ismail Benkirane} \\ \url{ismail.benkirane@etu.upmc.fr}}
+\date{}
+
+\begin{document}
+
+	\maketitle
+	
+{\small Projet pour le cours \textit{Apprentissage Statistique} du LIP6, Sorbonne Université} \hfill Janvier 2019
+	
+	\hrulefill
+
+	\begin{abstract} {\footnotesize \justify Ce projet a pour but de proposer et tester des modèles pour l'étude de la base de données \textit{Covertype} \footnote{\url{https://archive.ics.uci.edu/ml/datasets/Covertype}}} \end{abstract}
+	
+	\hrulefill
+
+	\tableofcontents
+	
+	\section{Chargement des données}
+	
+	\section{Analyse préliminaire et pré-traitement des données}
+	
+	\section{Test de différents modèles}
+	
+	\end{document}
