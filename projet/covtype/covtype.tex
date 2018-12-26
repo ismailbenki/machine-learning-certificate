@@ -1,8 +1,10 @@
 \documentclass[12pt,a4paper]{article}
 
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+
 \usepackage[a4paper]{geometry}
 \geometry{hscale=0.85,vscale=0.85,centering}
-\usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{framed}
 \usepackage[framed]{ntheorem}
@@ -34,6 +36,8 @@
 \usepackage{subfigure}
 \usepackage[francais]{babel}
 
+
+
 \titleformat{\section}
 {\centering \Large \normalfont \scshape}{\thesection}{1em}{}
 \titleformat{\subsection}
@@ -41,7 +45,6 @@
 \titleformat{\subsubsection}
 { \normalsize \scshape}{\thesubsubsection}{1em}{}
 \numberwithin{equation}{section}
-\DeclareUnicodeCharacter{00A0}{~}
 
 \setcounter{tocdepth}{2}
 
@@ -75,11 +78,37 @@
 	
 	\hrulefill
 
-	\begin{abstract} {\footnotesize \justify Ce projet a pour but de proposer et tester des modèles pour l'étude de la base de données \textit{Covertype} \footnote{\url{https://archive.ics.uci.edu/ml/datasets/Covertype}}} \end{abstract}
+	{\small \justify Ce projet a pour but de proposer et tester des modèles pour l'étude de la base de données \textit{Covertype} \footnote{\url{https://archive.ics.uci.edu/ml/datasets/Covertype}}, de 581\,012 instances, avec 54 attributs et 7 classes à prédire, sans données manquantes.\\
+	Les attributs sont les suivants : \\
+	
+		\begin{tabular}{l l p{5.2cm}}
+			Nom & Unité & Description \\
+			\hline
+			\verb!Elevation! & mètres & Altitude \\ 
+			\verb!Aspect! & degrés & Orientation \\ 
+			\verb!Slope! & degrés & Pente \\
+			\verb!Horizontal_Distance_To_Hydrology! & mètres & Distance horizontale au point d’eau le plus proche\\
+			\verb!Vertical_Distance_To_Hydrology! & mètres & Distance verticale au point d’eau le plus proche \\
+			\verb!Horizontal_Distance_To_Roadways! & mètres & Distance horizontale à la route la plus proche \\
+			\verb!Hillshade_9a!m & entier entre 0 et 255 & Ombrage à 9h au solstice d’été \\
+			\verb!Hillshade_Noon! & entier entre 0 et 255 & Ombrage à 12h au solstice d'été\\
+			\verb!Hillshade_3pm! & entier entre 0 et 255 &  Ombrage à 15h au solstice d'été \\
+			\verb!Horizontal_Distance_To_Fire_Points! & mètres & Distance horizontale au départ de feu le plus proche\\
+			\verb!Wilderness_Area! & 4 colonnes binaires & Wilderness area designation \\
+			\verb!Soil_Type! & 40 colonnes binaires & Type de sol\\
+			\verb!Cover_Type! & entier entre 1 et 7 & Classe\\
+		\end{tabular}\\
+	
+	\medskip
+	Il s'agit donc d'un problème de classification multi-classe avec 7 classes.
+	}
+	\medskip
 	
 	\hrulefill
 
 	\tableofcontents
+	
+	\newpage
 	
 	\section{Chargement des données}
 	
