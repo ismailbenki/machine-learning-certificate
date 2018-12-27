@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  25 DEC 2018 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  27 DEC 2018 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,32 +1308,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--101
 
  []
 
-(./covtype.toc)
+(./covtype.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `covtype.toc'.
 
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (15.78258pt too wide) in paragraph at lines 140--140
+[]  []\T1/lmtt/m/n/12 elif attribut in ['Cover_Type','Hillshade_9am','Hillshade
+_Noon','Hillshade_3pm']:  
+ []
+
+[3] <"./img/Dataframe".png, id=59, 894.84312pt x 237.38687pt>
+File: "./img/Dataframe".png Graphic file (type png)
+
+<use "./img/Dataframe".png>
+Package pdftex.def Info: "./img/Dataframe".png used on input line 186.
+(pdftex.def)             Requested size: 507.88533pt x 134.73598pt.
+ <img/data_hist.png, id=61, 398.48875pt x 264.99pt>
+File: img/data_hist.png Graphic file (type png)
+
+<use img/data_hist.png>
+Package pdftex.def Info: img/data_hist.png used on input line 198.
+(pdftex.def)             Requested size: 355.51817pt x 236.4226pt.
+ <img/soil1.png, id=62, 392.46625pt x 264.99pt>
+File: img/soil1.png Graphic file (type png)
+
+<use img/soil1.png>
+Package pdftex.def Info: img/soil1.png used on input line 210.
+(pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
+ <img/soil2.png, id=63, 392.46625pt x 264.99pt>
+File: img/soil2.png Graphic file (type png)
+
+<use img/soil2.png>
+Package pdftex.def Info: img/soil2.png used on input line 215.
+(pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
+ <img/soil3.png, id=64, 392.46625pt x 264.99pt>
+File: img/soil3.png Graphic file (type png)
+
+<use img/soil3.png>
+Package pdftex.def Info: img/soil3.png used on input line 220.
+(pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
+ <img/soil4.png, id=65, 385.44pt x 264.99pt>
+File: img/soil4.png Graphic file (type png)
+
+<use img/soil4.png>
+Package pdftex.def Info: img/soil4.png used on input line 227.
+(pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
+ <img/soil5.png, id=66, 386.44376pt x 264.99pt>
+File: img/soil5.png Graphic file (type png)
+
+<use img/soil5.png>
+Package pdftex.def Info: img/soil5.png used on input line 231.
+(pdftex.def)             Requested size: 111.73538pt x 76.6187pt.
+ <img/soil6.png, id=67, 385.44pt x 264.99pt>
+File: img/soil6.png Graphic file (type png)
+
+<use img/soil6.png>
+Package pdftex.def Info: img/soil6.png used on input line 235.
+(pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
+ <img/soil7.png, id=68, 385.44pt x 264.99pt>
+File: img/soil7.png Graphic file (type png)
+
+<use img/soil7.png>
+Package pdftex.def Info: img/soil7.png used on input line 239.
+(pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
+ <img/wilderness1.png, id=69, 398.48875pt x 264.99pt>
+File: img/wilderness1.png Graphic file (type png)
+
+<use img/wilderness1.png>
+Package pdftex.def Info: img/wilderness1.png used on input line 249.
+(pdftex.def)             Requested size: 152.36714pt x 101.31993pt.
+ <img/wilderness2.png, id=70, 398.48875pt x 264.99pt>
+File: img/wilderness2.png Graphic file (type png)
+
+<use img/wilderness2.png>
+Package pdftex.def Info: img/wilderness2.png used on input line 254.
+(pdftex.def)             Requested size: 152.36714pt x 101.31993pt.
+ <img/wilderness3.png, id=71, 392.46625pt x 264.99pt>
+File: img/wilderness3.png Graphic file (type png)
+
+<use img/wilderness3.png>
+Package pdftex.def Info: img/wilderness3.png used on input line 259.
+(pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
+ <img/wilderness4.png, id=72, 385.44pt x 264.99pt>
+File: img/wilderness4.png Graphic file (type png)
+
+<use img/wilderness4.png>
+Package pdftex.def Info: img/wilderness4.png used on input line 266.
+(pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
+ <img/wilderness5.png, id=73, 385.44pt x 264.99pt>
+File: img/wilderness5.png Graphic file (type png)
+
+<use img/wilderness5.png>
+Package pdftex.def Info: img/wilderness5.png used on input line 270.
+(pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
+ <img/wilderness6.png, id=74, 392.46625pt x 264.99pt>
+File: img/wilderness6.png Graphic file (type png)
+
+<use img/wilderness6.png>
+Package pdftex.def Info: img/wilderness6.png used on input line 274.
+(pdftex.def)             Requested size: 111.73538pt x 75.44206pt.
+ <img/wilderness7.png, id=75, 392.46625pt x 264.99pt>
+File: img/wilderness7.png Graphic file (type png)
+
+<use img/wilderness7.png>
+Package pdftex.def Info: img/wilderness7.png used on input line 278.
+(pdftex.def)             Requested size: 111.73538pt x 75.44206pt.
 \tf@thm=\write6
 \openout6 = `covtype.thm'.
 
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+ [4 <./img/Dataframe.png> <./img/data_hist.png>]
+[5 <./img/soil1.png> <./img/soil2.png> <./img/soil3.png> <./img/soil4.png> <./i
+mg/soil5.png> <./img/soil6.png> <./img/soil7.png> <./img/wilderness1.png> <./im
+g/wilderness2.png> <./img/wilderness3.png> <./img/wilderness4.png> <./img/wilde
+rness5.png> <./img/wilderness6.png> <./img/wilderness7.png>] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 285.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
  (./covtype.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
 Package rerunfilecheck Info: File `covtype.out' has not changed.
-(rerunfilecheck)             Checksum: 98D9D0BE9B59803FB5226E7C346D8793;221.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+(rerunfilecheck)             Checksum: 7314B3DC423AC9DEF01E7DBC51382645;401.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
  ) 
 Here is how much of TeX's memory you used:
- 28927 strings out of 493089
- 653298 string characters out of 6134842
- 807372 words of memory out of 5000000
- 31866 multiletter control sequences out of 15000+600000
- 73606 words of font info for 68 fonts, out of 8000000 for 9000
+ 29084 strings out of 493089
+ 655894 string characters out of 6134842
+ 809727 words of memory out of 5000000
+ 31979 multiletter control sequences out of 15000+600000
+ 87793 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,83p,728b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
@@ -1342,12 +1450,13 @@ texlive/2015/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
 dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/lm/lmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
 c/lm/lmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmri10.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on covtype.pdf (2 pages, 183564 bytes).
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on covtype.pdf (6 pages, 344624 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
