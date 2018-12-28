@@ -10,27 +10,27 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: covtype.bib
 You've used 2 entries,
             4793 wiz_defined-function locations,
-            900 strings with 6587 characters,
-and the built_in function-call counts, 1193 in all, are:
+            899 strings with 6568 characters,
+and the built_in function-call counts, 1181 in all, are:
 = -- 122
 > -- 38
 < -- 34
 + -- 42
 - -- 14
-* -- 72
+* -- 69
 := -- 213
 add.period$ -- 2
 call.type$ -- 2
 change.case$ -- 10
 chr.to.int$ -- 2
 cite$ -- 2
-duplicate$ -- 34
-empty$ -- 75
+duplicate$ -- 33
+empty$ -- 74
 format.name$ -- 22
-if$ -- 228
+if$ -- 225
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
+missing$ -- 8
 newline$ -- 20
 num.names$ -- 6
 pop$ -- 16
@@ -40,7 +40,7 @@ quote$ -- 0
 skip$ -- 79
 stack$ -- 0
 substring$ -- 58
-swap$ -- 8
+swap$ -- 6
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0

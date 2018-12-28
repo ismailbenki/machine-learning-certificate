@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  27 DEC 2018 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  28 DEC 2018 00:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,85 +1422,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
 <img/soil1.png, id=78, 392.46625pt x 264.99pt>
 File: img/soil1.png Graphic file (type png)
  <use img/soil1.png>
-Package pdftex.def Info: img/soil1.png used on input line 244.
+Package pdftex.def Info: img/soil1.png used on input line 242.
 (pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
 
 <img/soil2.png, id=79, 392.46625pt x 264.99pt>
 File: img/soil2.png Graphic file (type png)
  <use img/soil2.png>
-Package pdftex.def Info: img/soil2.png used on input line 248.
+Package pdftex.def Info: img/soil2.png used on input line 246.
 (pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
 
 <img/soil3.png, id=80, 392.46625pt x 264.99pt>
 File: img/soil3.png Graphic file (type png)
  <use img/soil3.png>
-Package pdftex.def Info: img/soil3.png used on input line 252.
+Package pdftex.def Info: img/soil3.png used on input line 250.
 (pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
 
 <img/soil4.png, id=81, 385.44pt x 264.99pt>
 File: img/soil4.png Graphic file (type png)
  <use img/soil4.png>
-Package pdftex.def Info: img/soil4.png used on input line 258.
+Package pdftex.def Info: img/soil4.png used on input line 256.
 (pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
 
 <img/soil5.png, id=82, 386.44376pt x 264.99pt>
 File: img/soil5.png Graphic file (type png)
  <use img/soil5.png>
-Package pdftex.def Info: img/soil5.png used on input line 261.
+Package pdftex.def Info: img/soil5.png used on input line 259.
 (pdftex.def)             Requested size: 111.73538pt x 76.6187pt.
 
 <img/soil6.png, id=83, 385.44pt x 264.99pt>
 File: img/soil6.png Graphic file (type png)
  <use img/soil6.png>
-Package pdftex.def Info: img/soil6.png used on input line 264.
+Package pdftex.def Info: img/soil6.png used on input line 262.
 (pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
 
 <img/soil7.png, id=84, 385.44pt x 264.99pt>
 File: img/soil7.png Graphic file (type png)
  <use img/soil7.png>
-Package pdftex.def Info: img/soil7.png used on input line 267.
+Package pdftex.def Info: img/soil7.png used on input line 265.
 (pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
 
 <img/wilderness1.png, id=85, 398.48875pt x 264.99pt>
 File: img/wilderness1.png Graphic file (type png)
  <use img/wilderness1.png>
-Package pdftex.def Info: img/wilderness1.png used on input line 271.
+Package pdftex.def Info: img/wilderness1.png used on input line 269.
 (pdftex.def)             Requested size: 152.36714pt x 101.31993pt.
 
 <img/wilderness2.png, id=86, 398.48875pt x 264.99pt>
 File: img/wilderness2.png Graphic file (type png)
  <use img/wilderness2.png>
-Package pdftex.def Info: img/wilderness2.png used on input line 275.
+Package pdftex.def Info: img/wilderness2.png used on input line 273.
 (pdftex.def)             Requested size: 152.36714pt x 101.31993pt.
 
 <img/wilderness3.png, id=87, 392.46625pt x 264.99pt>
 File: img/wilderness3.png Graphic file (type png)
  <use img/wilderness3.png>
-Package pdftex.def Info: img/wilderness3.png used on input line 279.
+Package pdftex.def Info: img/wilderness3.png used on input line 277.
 (pdftex.def)             Requested size: 152.36714pt x 102.87665pt.
 
 <img/wilderness4.png, id=88, 385.44pt x 264.99pt>
 File: img/wilderness4.png Graphic file (type png)
  <use img/wilderness4.png>
-Package pdftex.def Info: img/wilderness4.png used on input line 285.
+Package pdftex.def Info: img/wilderness4.png used on input line 283.
 (pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
 
 <img/wilderness5.png, id=89, 385.44pt x 264.99pt>
 File: img/wilderness5.png Graphic file (type png)
  <use img/wilderness5.png>
-Package pdftex.def Info: img/wilderness5.png used on input line 288.
+Package pdftex.def Info: img/wilderness5.png used on input line 286.
 (pdftex.def)             Requested size: 111.73538pt x 76.81682pt.
 
 <img/wilderness6.png, id=90, 392.46625pt x 264.99pt>
 File: img/wilderness6.png Graphic file (type png)
  <use img/wilderness6.png>
-Package pdftex.def Info: img/wilderness6.png used on input line 291.
+Package pdftex.def Info: img/wilderness6.png used on input line 289.
 (pdftex.def)             Requested size: 111.73538pt x 75.44206pt.
 
 <img/wilderness7.png, id=91, 392.46625pt x 264.99pt>
 File: img/wilderness7.png Graphic file (type png)
  <use img/wilderness7.png>
-Package pdftex.def Info: img/wilderness7.png used on input line 294.
+Package pdftex.def Info: img/wilderness7.png used on input line 292.
 (pdftex.def)             Requested size: 111.73538pt x 75.44206pt.
 
 
@@ -1514,23 +1514,23 @@ t.png> <./img/Horizontal_Hydrology_boxplot.png> <./img/roadways_boxplot.png> <.
 \openout6 = `covtype.thm'.
 
  [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
  [7 <./img/soil1.png> <./img/soil2.png> <./img/soil3.png> <./img/soil4.png> <./
 img/soil5.png> <./img/soil6.png> <./img/soil7.png> <./img/wilderness1.png> <./i
 mg/wilderness2.png> <./img/wilderness3.png> <./img/wilderness4.png> <./img/wild
 erness5.png> <./img/wilderness6.png> <./img/wilderness7.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./covtype.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `covtype.out' has not changed.
 (rerunfilecheck)             Checksum: 749FD166AD3EF023DB64C6D42A79CFD1;305.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
  28901 strings out of 493089
  652977 string characters out of 6134842
- 807085 words of memory out of 5000000
+ 807053 words of memory out of 5000000
  31783 multiletter control sequences out of 15000+600000
  94099 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1548,7 +1548,7 @@ e/2015/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2015/texmf
 s/type1/public/lm/lmri12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/lm/lmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lm
 tt12.pfb>
-Output written on covtype.pdf (7 pages, 394655 bytes).
+Output written on covtype.pdf (7 pages, 394019 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
