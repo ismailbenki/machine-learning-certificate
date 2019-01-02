@@ -84,7 +84,7 @@
 	
 	\section{Chargement des données}
 	
-	On choisit d'utiliser la bibliothèque \verb!pandas! pour charger les données, surtout pour l'analyse préliminaire. \verb!pandas! fournit une panoplie de fonctions pour visualiser les données. \verb!groupby!, \verb!boxplot! et \verb!hist! nous seront forts utiles pour choisir les données que nous exploiterons.\\
+	On choisit d'utiliser la bibliothèque \verb!pandas! pour charger les données, surtout pour l'analyse préliminaire. \verb!pandas! fournit une panoplie de fonctions pour visualiser les données. \verb!groupby!, \verb!boxplot! et \verb!hist! nous seront forts utiles pour choisir les données que nous exploiterons. Le \textit{notebook} contenant le code joint au rapport nécessite aussi les bibliothèques \verb!matplotlib!, \verb!numpy!, \verb!sklearn! et \verb!plotly!.\\
 	
 	Les attributs sont les suivants : 
 	
@@ -227,13 +227,17 @@
 	\end{figure}
 	
 	En effet, lorsqu'on regarde la figure \ref{fig:disthist}, on constate que ce nouvel attribut reste similaire à \hhydro tout en étant sensible aux variations de\\ \vhydro.\\
+
 	
 	Ensuite, 
 	
+	\newpage
 
 	
 	\subsection{Données qualitatives}
 	Premièrement, au vu du nombre de paramètres que comportent les attributs \soil et \wilderness, on peut se demander si ces données sont vraiment utiles au problème,
+	
+	
 	
 	\begin{figure}[h]
 		\centering
@@ -297,6 +301,21 @@
 	et effectivement les données qualitatives sont importantes : on voit sur la figure \ref{fig:soil-wild_hist} qu'elles varient beaucoup selon les classes, et dans \cite{C-D} qu'elles changent considérablement le score des modèles \textit{K-Means} et \textit{SVM}.
 	
 	\newpage
+	
+	\section{Test des méthodes}
+	
+	\subsection{Random Forest}
+	
+	On fait varier les paramètres
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/random_forest_accuracy1}
+		\caption{Accuracy en fonction du paramètre \texttt{n\_variables} }
+		\label{fig:randomforestaccuracy1}
+	\end{figure}
+	
+	
 	
 	\bibliographystyle{alphadin}
 	\bibliography{covtype}
