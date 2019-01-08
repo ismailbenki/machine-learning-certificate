@@ -115,7 +115,6 @@
 	Nos données seront donc : 
 	\begin{itemize}
 	 	\item \verb!df_covtype! : \textit{DataFrame} de toutes les données non traitées triées par attributs. 
-	 	\item \verb!df_bycovtype! : \textit{DataFrame.groupby} de toutes les données triées par attributs et regroupée par classes. 
 	 	\item \verb!labels! :\textit{np.array} des étiquettes des types de forêts.
 	 	\item \verb!dict_attributs! : \textit{dictionnaire} qui associe les attributs aux bons index. 
 	 	\item \verb!qualitative! : \textit{liste} des attributs des données qualitatives.
@@ -310,14 +309,14 @@
 	
 	\subsection{Random Forest}
 	
-	On fait varier les paramètres de notre premier modèle. On commence par le paramètre \texttt{n\_variables}, \\
+	On fait varier les paramètres de notre premier modèle. On commence par les paramètres \texttt{n\_estimators}, qui est le nombre d'arbres, et \texttt{max\_depth} qui la profondeur des arbres utilisés dans le modèle.\\ On constate par différents test \footnote{cf. le notebook joint au rapport} qu'aller au delà de 15 et 50 respectivement ne change pas grand chose.
 	
 	
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\linewidth]{img/random_forest_accuracy1}
-		\caption{Accuracy en fonction du paramètre \texttt{n\_variables} }
+		\includegraphics[width=0.7\linewidth]{img/random_forest_accuracy}
+		\caption{Accuracy en fonction des paramètrse \texttt{n\_variables}  et \texttt{max\_depth}}
 		\label{fig:randomforestaccuracy1}
 	\end{figure}
 	
