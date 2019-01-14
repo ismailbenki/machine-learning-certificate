@@ -13,10 +13,8 @@ from sklearn.decomposition import PCA
 attributs_names = ['Elevation','Aspect','Slope',
                   'Horizontal_Distance_To_Hydrology',
                   'Vertical_Distance_To_Hydrology',
-                  'Horizontal_Distance_To_Roadways',
-                  'Hillshade_9am','Hillshade_Noon',
-                  'Hillshade_3pm',
-                  'Horizontal_Distance_To_Fire_Points',
+                  'Distance_To_Roadways','Distance_To_Fire_Points',
+                  'Hillshade_9am','Hillshade_Noon','Hillshade_3pm',
                   'Wilderness_Area1','Wilderness_Area2','Wilderness_Area3','Wilderness_Area4',
                   'Soil_Type1','Soil_Type2','Soil_Type3','Soil_Type4','Soil_Type5',
                   'Soil_Type6','Soil_Type7','Soil_Type8','Soil_Type9','Soil_Type10',
@@ -92,9 +90,9 @@ def scatter(df,keys,volume=False):
 
         for n, color in zip(range(1,len(forest_cover_types)+1),['blue','red','green','orange','pink','yellow','purple']):
 
-            xs = df[keys[0]][cov==n].values[:300]
-            ys = df[keys[1]][cov==n].values[:300]
-            zs = df[keys[2]][cov==n].values[:300]
+            xs = df[keys[0]][cov==n].values[:1000]
+            ys = df[keys[1]][cov==n].values[:1000]
+            zs = df[keys[2]][cov==n].values[:1000]
 
             trace = go.Scatter3d(
                 x=xs,
@@ -231,7 +229,7 @@ def dist(x,y):
     return np.sqrt(np.array(x)**2 + np.array(y)**2)
 
 
-def covtype_load_data(url_str,pca=False,pca_label=4):
+def covtype_load_data(url_str,pca=False,pca_label=4,modified=True):
     print('Loading file...')
     # df_covtype : DataFrame de toutes les données non traitées triées par attribut
     df_covtype = pd.read_csv(url_str,
@@ -247,82 +245,100 @@ def covtype_load_data(url_str,pca=False,pca_label=4):
     covtypes = list(set(df_covtype.Cover_Type))
     print('Multi-class :',forest_cover_types)
 
-    print('Features :')
+    binary_data = []
 
-    print('   Wilderness_Area...')
+    if modified:
 
-    wilderness = pd.concat([df_covtype[name] for name in attributs_names[10:14]],axis=1).values
-    df_covtype = df_covtype.drop(attributs_names[10:14],axis=1)
-    df_covtype['Wilderness_Area'] = convert_to_int(wilderness)
+        print('\tCategorical Features :')
 
-    print('   Deleting Soil_Type...')
+        print('\t\tWilderness_Area...')
+        wilderness = pd.concat([df_covtype[name] for name in attributs_names[10:14]],axis=1).values
+        df_covtype = df_covtype.drop(attributs_names[10:14],axis=1)
 
-    soil = pd.concat([df_covtype[name] for name in attributs_names[14:54]],axis=1).values
-    df_covtype = df_covtype.drop(attributs_names[14:54],axis=1)
-    df_covtype['Soil_Type'] = convert_to_int(soil)
+        print('\t\tDeleting Soil_Type...')
+        soil = pd.concat([df_covtype[name] for name in attributs_names[14:54]],axis=1).values
+        df_covtype = df_covtype.drop(attributs_names[14:54],axis=1)
 
-    soil_family = redef_soil(soil,dict_family,bi_class=True)
-    df_covtype['Soil_Family'] = convert_to_int(soil_family)
-    print('   Soil_Family')
+        print('\t\tAdding Soil_Family...')
+        soil_family = redef_soil(soil,dict_family,bi_class=True)
 
-    soil_group = redef_soil(soil,dict_group)
-    df_covtype['Soil_Group'] = convert_to_int(soil_group)
-    print('   Soil_Group')
+        print('\t\tAdding Soil_Group...')
+        soil_group = redef_soil(soil,dict_group)
 
-    aspect_group = redef_aspect(df_covtype.Aspect.values)
-    df_covtype['Aspect_Group'] = convert_to_int(aspect_group)
-    print('   Aspect_Group : (N,NE,E,SE,S,SW,W,NW)')
+        print('\t\tAdding Aspect_Group : (N,NE,E,SE,S,SW,W,NW) ...')
+        aspect_group = redef_aspect(df_covtype.Aspect.values)
 
-    df_covtype['sqrt_Fire'] = np.sqrt(df_covtype.Horizontal_Distance_To_Fire_Points.values)
-    print('   sqr_Fire = sqrt(Horizontal_Distance_To_Fire_Points)')
+        binary_data = np.concatenate([wilderness,soil_family,soil_group,aspect_group],axis=1)
 
-    df_covtype['sqrt_Roadways'] = np.sqrt(df_covtype.Horizontal_Distance_To_Roadways.values)
-    print('   sqr_Roadways = sqrt(Horizontal_Distance_To_Roadways)')
 
-    df_covtype['sin_Aspect'] = np.sin(df_covtype.Aspect.values * np.pi/180)
-    print('   sin_Aspect = sin(Aspect)')
 
-    df_covtype['cos_Slope'] = np.cos(df_covtype.Slope.values * np.pi/180)
-    print('   cos_Slope = cos(Slope)')
 
-    df_covtype['Distance_To_Hydrology'] = dist(df_covtype.Vertical_Distance_To_Hydrology.values,
-                                           df_covtype.Horizontal_Distance_To_Hydrology.values)
-    print('   Distance_To_Hydrology = sqrt(Vertical_Distance_To_Hydrology^2 + Horizontal_Distance_To_Hydrology^2)')
+        print('\tNumerical Features :')
 
-    df_covtype['Hillshade_mean'] = df_covtype[['Hillshade_9am','Hillshade_Noon','Hillshade_3pm']].mean(axis=1)
-    print('   Hillshade_mean = 1/3 * (Hillshade_9am+Hillshade_Noon+Hillshade_3pm)')
-    print('   Hillshade_3pm')
-    print('   Elevation')
+        print('\t\tDistance_To_Fire_Points...')
 
-    target = df_covtype.Cover_Type.values
+        df_covtype['sqrt_Roadways'] = np.sqrt(df_covtype.Distance_To_Roadways.values)
+        print('\t\tAdding sqr_Roadways = sqrt(Distance_To_Roadways)...')
 
-    data0 = df_covtype.drop(['Horizontal_Distance_To_Hydrology','Vertical_Distance_To_Hydrology',
-                         'Horizontal_Distance_To_Roadways','Horizontal_Distance_To_Fire_Points',
-                         'Slope','Hillshade_9am','Hillshade_Noon','Aspect','Aspect_Group',
-                         'Cover_Type','Wilderness_Area','Soil_Type','Soil_Family','Soil_Group'],axis=1).values
+        df_covtype['sin_Aspect'] = np.sin(df_covtype.Aspect.values * np.pi/180)
+        print('\t\tAdding sin_Aspect = sin(Aspect)...')
+        print('\t\tAspect...')
+
+        df_covtype['cos_Slope'] = np.cos(df_covtype.Slope.values * np.pi/180)
+        print('\t\tAdding cos_Slope = cos(Slope)...')
+
+        print('\t\tAdding Distance_To_Hydrology = sqrt(Vertical_Distance_To_Hydrology^2 + Horizontal_Distance_To_Hydrology^2)...')
+        df_covtype['Distance_To_Hydrology'] = dist(df_covtype.Vertical_Distance_To_Hydrology.values,
+                                               df_covtype.Horizontal_Distance_To_Hydrology.values)
+
+        print('\t\tAdding Hillshade_mean = 1/3 * (Hillshade_9am+Hillshade_Noon+Hillshade_3pm)...')
+        df_covtype['Hillshade_mean'] = df_covtype[['Hillshade_9am','Hillshade_Noon','Hillshade_3pm']].mean(axis=1)
+
+        print('\t\tHillshade_3pm...')
+        df_covtype['Hillshade_mean'] = df_covtype[['Hillshade_9am','Hillshade_Noon','Hillshade_3pm']].mean(axis=1)
+
+        print('\t\tAdding Corr_Hillshade9amNoon...')
+        df_covtype['Corr_Hillshade9amNoon'] = df_covtype.Hillshade_9am.values * df_covtype.Hillshade_Noon.values/255
+        print('\t\tElevation...')
+
+        target = df_covtype.Cover_Type.values
+
+        df = df_covtype.drop(['Horizontal_Distance_To_Hydrology','Vertical_Distance_To_Hydrology',
+                              'Slope','Hillshade_9am','Hillshade_Noon','Cover_Type'],axis=1)
+        data_names = df.columns
+
+    else:
+        target = df_covtype.Cover_Type.values
+        df = df_covtype.drop('Cover_Type',axis=1)
+        data_names = df.columns[:10]
+
+    data0 = df.values
 
     if pca:
         print('projecting pca...')
         pca = PCA().fit(data0[target == pca_label,:])
         data0 = np.dot(data0,pca.components_) # projection des données sur les axes prinipaux de la pca
 
-    N,d = data0.shape
-    N,w = np.array(wilderness).shape
-    N,sf = np.array(soil_family).shape
-    N,sg = np.array(soil_group).shape
-    N,a = np.array(aspect_group).shape
-    data = np.zeros((N,d+w+sf+sg+a))
+    if modified:
+        N,d = data0.shape
+        N,w = np.array(wilderness).shape
+        N,sf = np.array(soil_family).shape
+        N,sg = np.array(soil_group).shape
+        N,a = np.array(aspect_group).shape
+        data = np.zeros((N,d+w+sf+sg+a))
+        data = np.concatenate([data0,binary_data],axis=1)
+    else:
+        data=data0
+
 
     # Normalisation
     print('Normalization...')
-    for i in range(d):
-        x = data0[:,i]
-        data0[:,i] = (x-np.mean(x))/sum(x)
+    for i in range(10):
+        x = data[:,i]
+        data[:,i] = (x-np.mean(x))/sum(x)
 
-    # On remet les données qualitative de sorte à pouvoir les exploiter
-    binary_data = np.concatenate([wilderness,soil_family,soil_group,aspect_group],axis=1)
-    data = np.concatenate([data0,binary_data],axis=1)
+
 
     print('Done.')
 
-    return data,target
+    return data_names,data,target
