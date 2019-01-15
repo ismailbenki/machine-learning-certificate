@@ -245,8 +245,6 @@ def covtype_load_data(url_str,pca=False,pca_label=4,modified=True):
     covtypes = list(set(df_covtype.Cover_Type))
     print('Multi-class :',forest_cover_types)
 
-    binary_data = []
-
     if modified:
 
         print('\tCategorical Features :')
@@ -275,10 +273,9 @@ def covtype_load_data(url_str,pca=False,pca_label=4,modified=True):
 
         print('\tNumerical Features :')
 
-        print('\t\tDistance_To_Fire_Points...')
-
         df_covtype['sqrt_Roadways'] = np.sqrt(df_covtype.Distance_To_Roadways.values)
         print('\t\tAdding sqr_Roadways = sqrt(Distance_To_Roadways)...')
+        print('\t\tDistance_To_Fire...')
 
         df_covtype['sin_Aspect'] = np.sin(df_covtype.Aspect.values * np.pi/180)
         print('\t\tAdding sin_Aspect = sin(Aspect)...')
@@ -293,10 +290,7 @@ def covtype_load_data(url_str,pca=False,pca_label=4,modified=True):
 
         print('\t\tAdding Hillshade_mean = 1/3 * (Hillshade_9am+Hillshade_Noon+Hillshade_3pm)...')
         df_covtype['Hillshade_mean'] = df_covtype[['Hillshade_9am','Hillshade_Noon','Hillshade_3pm']].mean(axis=1)
-
         print('\t\tHillshade_3pm...')
-        df_covtype['Hillshade_mean'] = df_covtype[['Hillshade_9am','Hillshade_Noon','Hillshade_3pm']].mean(axis=1)
-
         print('\t\tAdding Corr_Hillshade9amNoon...')
         df_covtype['Corr_Hillshade9amNoon'] = df_covtype.Hillshade_9am.values * df_covtype.Hillshade_Noon.values/255
         print('\t\tElevation...')
@@ -341,4 +335,4 @@ def covtype_load_data(url_str,pca=False,pca_label=4,modified=True):
 
     print('Done.')
 
-    return data_names,data,target
+    return data_names,data,target,df

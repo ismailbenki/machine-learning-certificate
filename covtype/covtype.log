@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  14 JAN 2019 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.15)  15 JAN 2019 02:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -247,6 +247,9 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -1253,18 +1256,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 87--88
+Underfull \hbox (badness 4205) in paragraph at lines 85--86
 []\T1/lmr/m/n/10.95 Distance ver-ti-cale au point
  []
 
 
-Overfull \hbox (15.56401pt too wide) in paragraph at lines 80--97
+Overfull \hbox (15.56401pt too wide) in paragraph at lines 78--95
 []  
  []
 
-[1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./covtype.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
@@ -1272,281 +1272,278 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `covtype.toc'.
 
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+ [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<img/data_hist.png, id=64, 398.48875pt x 264.99pt>
+<img/data_hist.png, id=60, 398.48875pt x 264.99pt>
 File: img/data_hist.png Graphic file (type png)
  <use img/data_hist.png>
-Package pdftex.def Info: img/data_hist.png used on input line 125.
+Package pdftex.def Info: img/data_hist.png used on input line 121.
 (pdftex.def)             Requested size: 231.08464pt x 153.666pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 132--133
+Underfull \hbox (badness 2253) in paragraph at lines 128--129
 \T1/lmr/m/n/12 ment à faire la même chose
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 134--135
+Underfull \hbox (badness 1527) in paragraph at lines 130--131
 []\T1/lmr/m/n/12 On ob-serve dans la fi-gure
  []
 
 
-Underfull \hbox (badness 7099) in paragraph at lines 134--135
+Underfull \hbox (badness 7099) in paragraph at lines 130--131
 [][]\T1/lmr/m/n/12 2[][] l'im-por-tance des at-tri-buts
  []
 
-<img/slope_boxplot.png, id=67, 384.43625pt x 286.06876pt>
+<img/slope_boxplot.png, id=63, 384.43625pt x 286.06876pt>
 File: img/slope_boxplot.png Graphic file (type png)
 
 <use img/slope_boxplot.png>
-Package pdftex.def Info: img/slope_boxplot.png used on input line 140.
+Package pdftex.def Info: img/slope_boxplot.png used on input line 136.
 (pdftex.def)             Requested size: 152.36714pt x 113.38222pt.
 
-<img/roadways_boxplot.png, id=68, 396.48125pt x 286.06876pt>
+<img/roadways_boxplot.png, id=64, 396.48125pt x 286.06876pt>
 File: img/roadways_boxplot.png Graphic file (type png)
 
 <use img/roadways_boxplot.png>
-Package pdftex.def Info: img/roadways_boxplot.png used on input line 144.
+Package pdftex.def Info: img/roadways_boxplot.png used on input line 140.
 (pdftex.def)             Requested size: 152.36714pt x 109.9382pt.
 
-<img/elevation_boxplot.png, id=69, 396.48125pt x 286.06876pt>
+<img/elevation_boxplot.png, id=65, 396.48125pt x 286.06876pt>
 File: img/elevation_boxplot.png Graphic file (type png)
 
 <use img/elevation_boxplot.png>
-Package pdftex.def Info: img/elevation_boxplot.png used on input line 148.
+Package pdftex.def Info: img/elevation_boxplot.png used on input line 144.
 (pdftex.def)             Requested size: 152.36714pt x 109.9382pt.
- [3 <./img/data_hist.png> <./img/slope_boxplot.png> <./img/roadways_boxplot.png
+ [2 <./img/data_hist.png> <./img/slope_boxplot.png> <./img/roadways_boxplot.png
 > <./img/elevation_boxplot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-<img/wilderness_hist.png, id=85, 367.3725pt x 280.04625pt>
+<img/wilderness_hist.png, id=81, 367.3725pt x 280.04625pt>
 File: img/wilderness_hist.png Graphic file (type png)
 
 <use img/wilderness_hist.png>
-Package pdftex.def Info: img/wilderness_hist.png used on input line 166.
+Package pdftex.def Info: img/wilderness_hist.png used on input line 162.
 (pdftex.def)             Requested size: 177.76295pt x 135.51031pt.
 
-<img/soil_hist.png, id=86, 389.455pt x 280.04625pt>
+<img/soil_hist.png, id=82, 389.455pt x 280.04625pt>
 File: img/soil_hist.png Graphic file (type png)
  <use img/soil_hist.png>
-Package pdftex.def Info: img/soil_hist.png used on input line 168.
+Package pdftex.def Info: img/soil_hist.png used on input line 164.
 (pdftex.def)             Requested size: 177.76295pt x 127.8229pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
-<img/soil_family.png, id=87, 382.42876pt x 280.04625pt>
+<img/soil_family.png, id=83, 382.42876pt x 280.04625pt>
 File: img/soil_family.png Graphic file (type png)
 
 <use img/soil_family.png>
-Package pdftex.def Info: img/soil_family.png used on input line 183.
+Package pdftex.def Info: img/soil_family.png used on input line 179.
 (pdftex.def)             Requested size: 177.76295pt x 130.17314pt.
- <img/soil_group.png, id=88, 373.395pt x 280.04625pt>
+ <img/soil_group.png, id=84, 373.395pt x 280.04625pt>
 File: img/soil_group.png Graphic file (type png)
 
 <use img/soil_group.png>
-Package pdftex.def Info: img/soil_group.png used on input line 185.
+Package pdftex.def Info: img/soil_group.png used on input line 181.
 (pdftex.def)             Requested size: 177.76295pt x 133.32246pt.
- [4 <./img/wilderness_hist.png> <./img/soil_hist.png> <./img/soil_family.png> <
+ [3 <./img/wilderness_hist.png> <./img/soil_hist.png> <./img/soil_family.png> <
 ./img/soil_group.png>]
-<img/corr_matrix.png, id=100, 521.95pt x 416.55624pt>
+<img/corr_matrix.png, id=96, 521.95pt x 416.55624pt>
 File: img/corr_matrix.png Graphic file (type png)
-
-<use img/corr_matrix.png>
-Package pdftex.def Info: img/corr_matrix.png used on input line 198.
+ <use img/corr_matrix.png>
+Package pdftex.def Info: img/corr_matrix.png used on input line 194.
 (pdftex.def)             Requested size: 243.78278pt x 194.56108pt.
 
-<img/scatter_matrix.png, id=101, 444.66125pt x 330.23375pt>
+<img/scatter_matrix.png, id=97, 444.66125pt x 330.23375pt>
 File: img/scatter_matrix.png Graphic file (type png)
 
 <use img/scatter_matrix.png>
-Package pdftex.def Info: img/scatter_matrix.png used on input line 200.
+Package pdftex.def Info: img/scatter_matrix.png used on input line 196.
 (pdftex.def)             Requested size: 253.94266pt x 188.59294pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-<img/aspect.png, id=102, 357.335pt x 239.89626pt>
+<img/aspect.png, id=98, 357.335pt x 239.89626pt>
 File: img/aspect.png Graphic file (type png)
  <use img/aspect.png>
-Package pdftex.def Info: img/aspect.png used on input line 214.
+Package pdftex.def Info: img/aspect.png used on input line 210.
 (pdftex.def)             Requested size: 228.54683pt x 153.43423pt.
 
-Overfull \hbox (6.90854pt too wide) detected at line 219
+Overfull \hbox (6.90854pt too wide) detected at line 215
 [] \OT1/lmr/m/n/12 = (\OML/lmm/m/it/12 N; NW; W; SW; S; SE; E; NE\OT1/lmr/m/n/1
 2 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-<img/corr_hillshade.png, id=104, 389.455pt x 280.04625pt>
+<img/corr_hillshade.png, id=100, 389.455pt x 280.04625pt>
 File: img/corr_hillshade.png Graphic file (type png)
 
 <use img/corr_hillshade.png>
-Package pdftex.def Info: img/corr_hillshade.png used on input line 225.
+Package pdftex.def Info: img/corr_hillshade.png used on input line 221.
 (pdftex.def)             Requested size: 152.36714pt x 109.55943pt.
 
-<img/hillshade_mean.png, id=105, 395.4775pt x 280.04625pt>
+<img/hillshade_mean.png, id=101, 395.4775pt x 280.04625pt>
 File: img/hillshade_mean.png Graphic file (type png)
 
 <use img/hillshade_mean.png>
-Package pdftex.def Info: img/hillshade_mean.png used on input line 227.
+Package pdftex.def Info: img/hillshade_mean.png used on input line 223.
 (pdftex.def)             Requested size: 152.36714pt x 107.89291pt.
 
-<img/hillshade3.png, id=106, 401.5pt x 280.04625pt>
+<img/hillshade3.png, id=102, 401.5pt x 280.04625pt>
 File: img/hillshade3.png Graphic file (type png)
  <use img/hillshade3.png>
-Package pdftex.def Info: img/hillshade3.png used on input line 229.
+Package pdftex.def Info: img/hillshade3.png used on input line 225.
 (pdftex.def)             Requested size: 152.36714pt x 106.27765pt.
 
-[5 <./img/corr_matrix.png> <./img/scatter_matrix.png> <./img/aspect.png> <./img
+[4 <./img/corr_matrix.png> <./img/scatter_matrix.png> <./img/aspect.png> <./img
 /corr_hillshade.png> <./img/hillshade_mean.png> <./img/hillshade3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-<img/roadways_hist.png, id=122, 401.5pt x 280.04625pt>
+<img/roadways_hist.png, id=118, 401.5pt x 280.04625pt>
 File: img/roadways_hist.png Graphic file (type png)
 
 <use img/roadways_hist.png>
-Package pdftex.def Info: img/roadways_hist.png used on input line 241.
+Package pdftex.def Info: img/roadways_hist.png used on input line 237.
 (pdftex.def)             Requested size: 243.78278pt x 170.04169pt.
 
-<img/sqrt_roadways_hist.png, id=123, 389.455pt x 280.04625pt>
+<img/sqrt_roadways_hist.png, id=119, 389.455pt x 280.04625pt>
 File: img/sqrt_roadways_hist.png Graphic file (type png)
 
 <use img/sqrt_roadways_hist.png>
-Package pdftex.def Info: img/sqrt_roadways_hist.png used on input line 243.
+Package pdftex.def Info: img/sqrt_roadways_hist.png used on input line 239.
 (pdftex.def)             Requested size: 243.78278pt x 175.29767pt.
 
-<img/sin_aspect.png, id=124, 988.69376pt x 526.96875pt>
+<img/sin_aspect.png, id=120, 988.69376pt x 526.96875pt>
 File: img/sin_aspect.png Graphic file (type png)
 
 <use img/sin_aspect.png>
-Package pdftex.def Info: img/sin_aspect.png used on input line 252.
+Package pdftex.def Info: img/sin_aspect.png used on input line 248.
 (pdftex.def)             Requested size: 406.3098pt x 216.55711pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
-[6 <./img/roadways_hist.png> <./img/sqrt_roadways_hist.png> <./img/sin_aspect.p
+[5 <./img/roadways_hist.png> <./img/sqrt_roadways_hist.png> <./img/sin_aspect.p
 ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-<./img/logregram.png, id=137, 1019.81pt x 434.12187pt>
-File: ./img/logregram.png Graphic file (type png)
-
-<use ./img/logregram.png>
-Package pdftex.def Info: ./img/logregram.png used on input line 282.
-(pdftex.def)             Requested size: 507.88533pt x 216.20587pt.
-
-<img/logregmodifiedwopca.png, id=138, 621.32124pt x 497.86pt>
-File: img/logregmodifiedwopca.png Graphic file (type png)
-
-<use img/logregmodifiedwopca.png>
-Package pdftex.def Info: img/logregmodifiedwopca.png used on input line 290.
-(pdftex.def)             Requested size: 253.94266pt x 203.4782pt.
-File: img/logregmodifiedwopca.png Graphic file (type png)
- <use img/logregmodifiedwopca.png>
-Package pdftex.def Info: img/logregmodifiedwopca.png used on input line 295.
-(pdftex.def)             Requested size: 253.94266pt x 203.4782pt.
-
-Overfull \hbox (7.83322pt too wide) in paragraph at lines 290--296
- [][] 
- []
-
-
-Overfull \hbox (7.83322pt too wide) in paragraph at lines 290--296
- [][] 
- []
-
-[7 <./img/logregram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 301--302
-\T1/lmr/m/n/12 je-tant les don-nées sur une base plus pro-
- []
-
-
-Underfull \hbox (badness 1137) in paragraph at lines 301--302
-\T1/lmr/m/n/12 pice à voir cette classe. Et le ré-sul-tat est
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-[8 <./img/logregmodifiedwopca.png>]
-<img/random_forest_accuracy.png, id=160, 382.42876pt x 264.99pt>
-File: img/random_forest_accuracy.png Graphic file (type png)
 
-<use img/random_forest_accuracy.png>
-Package pdftex.def Info: img/random_forest_accuracy.png used on input line 312.
+Underfull \hbox (badness 1755) in paragraph at lines 295--296
+\T1/lmr/m/n/12 ti-no-miale ne converge pas sur les don-nées
+ []
 
-(pdftex.def)             Requested size: 355.51817pt x 246.35324pt.
- (./covtype.bbl)
+
+Underfull \hbox (badness 1308) in paragraph at lines 295--296
+\T1/lmr/m/n/12 vons à une ac-cu-racy de \T1/lmr/bx/n/12 63.8% \T1/lmr/m/n/12 ma
+is avec
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+[6] <img/importance.png, id=144, 481.8pt x 252.945pt>
+File: img/importance.png Graphic file (type png)
+ <use img/importance.png>
+Package pdftex.def Info: img/importance.png used on input line 304.
+(pdftex.def)             Requested size: 507.88533pt x 266.64604pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+<img/rf_sans_pca.png, id=146, 621.32124pt x 497.86pt>
+File: img/rf_sans_pca.png Graphic file (type png)
+
+<use img/rf_sans_pca.png>
+Package pdftex.def Info: img/rf_sans_pca.png used on input line 314.
+(pdftex.def)             Requested size: 243.78278pt x 195.3421pt.
+
+<img/rfc_with_PCA.png, id=147, 621.32124pt x 497.86pt>
+File: img/rfc_with_PCA.png Graphic file (type png)
+
+<use img/rfc_with_PCA.png>
+Package pdftex.def Info: img/rfc_with_PCA.png used on input line 318.
+(pdftex.def)             Requested size: 243.78278pt x 195.3421pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./img/importance.png>] (./covtype.bbl)
 \tf@thm=\write6
 \openout6 = `covtype.thm'.
 
- [9 <./img/random_forest_accuracy.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
+ [8 <./img/rf_sans_pca.png> <./img/rfc_with_PCA.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
  (./covtype.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
 Package rerunfilecheck Info: File `covtype.out' has not changed.
 (rerunfilecheck)             Checksum: BC61BC0CC5CC5D25EDA5A02CBB5384E4;436.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
  ) 
 Here is how much of TeX's memory you used:
- 28882 strings out of 493089
- 652708 string characters out of 6134842
- 805268 words of memory out of 5000000
- 31774 multiletter control sequences out of 15000+600000
+ 28894 strings out of 493089
+ 652887 string characters out of 6134842
+ 808190 words of memory out of 5000000
+ 31781 multiletter control sequences out of 15000+600000
  100404 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,83p,728b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,83p,728b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/20
 15/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2015/texmf-d
@@ -1567,10 +1564,10 @@ fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/lm/lmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/l
 m/lmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on covtype.pdf (9 pages, 945296 bytes).
+Output written on covtype.pdf (8 pages, 801987 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
+ 245 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 39 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
