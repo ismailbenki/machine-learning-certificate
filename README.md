@@ -4,4 +4,4 @@
 
 - Code principal dans *covtype.ipynb* et *covtype.html*, la bibliothèque *covtype.py* est necessaire.
 
-- Rapport dans *covtype.pdf*
+- Rapport dans *Forest_Cover_Type_Prediction.pdf*
